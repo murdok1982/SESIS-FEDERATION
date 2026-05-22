@@ -9,7 +9,6 @@ from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.core.config import settings
 from app.core.security import *
-from app.core.security import *
 from app.db.session import get_db
 from app.db.models.osint.user import User
 
