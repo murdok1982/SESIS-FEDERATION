@@ -1,0 +1,16 @@
+[
+  {"name": "Reuters World", "url": "https://feeds.reuters.com/Reuters/worldNews", "reliability": "B"},
+  {"name": "BBC World", "url": "http://feeds.bbci.co.uk/news/world/rss.xml", "reliability": "B"},
+  {"name": "FT World", "url": "https://www.ft.com/world?format=rss", "reliability": "B"},
+  {"name": "RAND", "url": "https://www.rand.org/blog.xml", "reliability": "B"},
+  {"name": "SIPRI", "url": "https://www.sipri.org/rss/news", "reliability": "A"},
+  {"name": "Chatham House", "url": "https://www.chathamhouse.org/rss/all", "reliability": "B"},
+  {"name": "CSIS", "url": "https://www.csis.org/analysis/rss.xml", "reliability": "B"},
+  {"name": "Brookings", "url": "https://www.brookings.edu/feed/", "reliability": "B"},
+  {"name": "Foreign Affairs", "url": "https://www.foreignaffairs.com/rss.xml", "reliability": "B"},
+  {"name": "Al Jazeera", "url": "https://www.aljazeera.com/xml/rss/all.xml", "reliability": "C"},
+  {"name": "DW World", "url": "https://rss.dw.com/rdf/rss-en-world", "reliability": "B"},
+  {"name": "France24", "url": "https://www.france24.com/en/rss", "reliability": "B"},
+  {"name": "AP World", "url": "https://feeds.apnews.com/rss/apf-worldnews", "reliability": "B"},
+  {"name": "The Economist", "url": "https://www.economist.com/international/rss.xml", "reliability": "B"}
+]
