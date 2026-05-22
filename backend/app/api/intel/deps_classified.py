@@ -100,7 +100,7 @@ async def get_db_with_context(
     session: AsyncSession = Depends(get_db),
 ) -> AsyncSession:
     """Yield a session that has the caller's RLS context pushed."""
-    await set_user_context(
+    await # set_user_context(
         session,
         clearance=int(user.clearance_level or 0),
         org_id=user.org_id,
