@@ -1,5 +1,5 @@
-from sqlalchemy.orm import declarative_base
-Base = declarative_base()
+"""Intel ORM models (migrated from Global-Intelligence)."""
+
 from app.db.models.intel.user import User, RoleEnum
 from app.db.models.intel.geography import Continent, Country, CountryProfile
 from app.db.models.intel.intelligence import IntelligenceCategory, IntelligenceItem, SourceRegistry
@@ -9,7 +9,7 @@ from app.db.models.intel.auth import MFARecoveryCode, WebAuthnCredential
 from app.db.models.intel.audit import AuditEvent
 
 __all__ = [
-    "Base", "User", "RoleEnum",
+    "User", "RoleEnum",
     "Continent", "Country", "CountryProfile",
     "IntelligenceCategory", "IntelligenceItem", "SourceRegistry",
     "DailyReport", "PremiumReport", "ReportCitation",
