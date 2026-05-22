@@ -5,7 +5,7 @@ from datetime import datetime
 from sqlalchemy.orm import declarative_base
 Base = declarative_base()
 
-from app.core.classification import ClassificationLevel, TLPMarker, TLPMarker
+from app.core.classification import ClassificationLevel, TLPMarker
 
 
 class IntelligenceCategory(Base):
