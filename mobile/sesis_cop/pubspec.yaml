@@ -1,0 +1,30 @@
+name: sesis_cop
+description: SESIS-FEDERATION Offline-first Mobile COP
+version: 1.0.0
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^1.0.0
+  web_socket_channel: ^2.4.0
+  nearby_connections: ^3.0.0
+  flutter_secure_storage: ^9.0.0
+  cryptography: ^2.7.0
+  flutter_map: ^6.0.0
+  latlong2: ^0.9.0
+  flutter_bloc: ^8.1.0
+  hydrated_bloc: ^9.1.0
+  sqflite: ^2.3.0
+  path_provider: ^2.1.0
+  google_fonts: ^6.1.0
+  fl_chart: ^0.65.0
+  sensors_plus: ^3.0.0
+  location: ^5.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
