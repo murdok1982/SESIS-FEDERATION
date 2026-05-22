@@ -7,14 +7,14 @@ from sqlalchemy.future import select
 
 from app.core.config import settings
 from app.core.security import decode_token
-from app.db.session import async_session
+from app.db.session import async_session as get_async_session
 from app.db.models.intel.user import User, RoleEnum
 
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl=f"{settings.API_V1_STR}/auth/login")
 
 
 async def get_db() -> AsyncGenerator[AsyncSession, None]:
-    async with AsyncSessionLocal() as session:
+    async with get_async_session() as session:
         yield session
 
 
