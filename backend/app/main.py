@@ -107,32 +107,30 @@ app.include_router(space.router, prefix="/api/v2/space", tags=["Space"])
 app.include_router(c2.router, prefix="/api/v2/c2", tags=["C2 v2"])
 
 # sesis-satellite (from AEGIS-IMINT)
-try:
-    from app.api.satellite import router as satellite_router
-    app.include_router(satellite_router, prefix="/api/v1/satellite", tags=["Satellite"])
-except ImportError:
-    logger.warning("Satellite module not available")
+from app.api.satellite.router import router as satellite_router
+app.include_router(satellite_router, prefix="/api/v1/satellite", tags=["Satellite", "AEGIS-IMINT"])
 
 # sesis-osint (from Atalaya)
-try:
-    from app.api.osint import router as osint_router
-    app.include_router(osint_router, prefix="/api/v1/osint", tags=["OSINT"])
-except ImportError:
-    logger.warning("OSINT module not available")
+from app.api.osint.router import router as osint_router
+app.include_router(osint_router, prefix="/api/v1/osint", tags=["OSINT", "Atalaya"])
 
 # sesis-intel (from Global-Intelligence)
-try:
-    from app.api.intel import router as intel_router
-    app.include_router(intel_router, prefix="/api/v1/intel", tags=["Intelligence"])
-except ImportError:
-    logger.warning("Intel module not available")
+from app.api.intel.router import router as intel_router
+app.include_router(intel_router, prefix="/api/v1/intel", tags=["Intelligence", "Global-Intel"])
 
 # sesis-agents (from SpyManager)
-try:
-    from app.api.agents import router as agents_router
-    app.include_router(agents_router, prefix="/api/v1/agents", tags=["Agents"])
-except ImportError:
-    logger.warning("Agents module not available")
+from app.api.agents.router import router as agents_router
+app.include_router(agents_router, prefix="/api/v1/agents", tags=["Agents", "SpyManager"])
+
+# Extra agent API modules
+from app.api.agents import intel_api, mesh_api, mobile_api, multimodal_api, steganography_api, threat_api, wearable_api
+app.include_router(intel_api.router, prefix="/api/v1/agents/intel", tags=["Agents", "Intel"])
+app.include_router(mesh_api.router, prefix="/api/v1/agents/mesh", tags=["Agents", "Mesh"])
+app.include_router(mobile_api.router, prefix="/api/v1/agents/mobile", tags=["Agents", "Mobile"])
+app.include_router(multimodal_api.router, prefix="/api/v1/agents/multimodal", tags=["Agents", "Multimodal"])
+app.include_router(steganography_api.router, prefix="/api/v1/agents/stego", tags=["Agents", "Steganography"])
+app.include_router(threat_api.router, prefix="/api/v1/agents/threat", tags=["Agents", "Threat"])
+app.include_router(wearable_api.router, prefix="/api/v1/agents/wearable", tags=["Agents", "Wearable"])
 
 # sesis-auth (unified)
 from app.api.auth import router as auth_router
