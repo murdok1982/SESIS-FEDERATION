@@ -4,10 +4,10 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "hsl(222 47% 11%)",
-        foreground: "hsl(210 40% 98%)",
-        military: { green: "#3ddc84", blue: "#3498db", red: "#e94560" },
+        background: "#0a0e17", foreground: "#e5e7eb",
+        military: { green: "#3ddc84", blue: "#3498db", red: "#e94560", amber: "#f59e0b" },
       },
+      fontFamily: { mono: ["Courier New", "monospace"] },
     },
   },
   plugins: [],
