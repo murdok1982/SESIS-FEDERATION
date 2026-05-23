@@ -1,0 +1,21 @@
+[
+  {
+    "name": "forward_deployment",
+    "weight": 0.85,
+    "conditions": {
+      "satellite.detection.new_positions": true,
+      "osint.gdelt_event.troop_movement": true,
+      "agents.field_report.enemy_contact": false
+    },
+    "action": "intel.priority_analyze()"
+  },
+  {
+    "name": "electronic_warfare_detect",
+    "weight": 0.75,
+    "conditions": {
+      "sensors.rf_scanner.signal_strength": {">=": 0.8},
+      "c2.cyber.detection": true
+    },
+    "action": "c2.alert(level=HIGH, category=EW)"
+  }
+]
