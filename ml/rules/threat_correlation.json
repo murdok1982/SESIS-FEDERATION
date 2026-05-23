@@ -1,0 +1,30 @@
+[
+  {
+    "name": "high_confidence_threat",
+    "weight": 0.9,
+    "conditions": {
+      "satellite.detection.confidence": {">=": 0.7},
+      "osint.gdelt_event.nearby": true,
+      "intel.threat_assessment.severity": {">=": 3}
+    },
+    "action": "c2.alert(level=CRITICAL)"
+  },
+  {
+    "name": "field_anomaly",
+    "weight": 0.7,
+    "conditions": {
+      "agents.field_report.anomalous": true,
+      "ml.anomaly_detection.score": {">=": 2.0}
+    },
+    "action": "intel.priority_review()"
+  },
+  {
+    "name": "troop_movement",
+    "weight": 0.8,
+    "conditions": {
+      "satellite.change_detection.movement": true,
+      "osint.intel_update.relevance": {">=": 0.6}
+    },
+    "action": "c2.alert(level=HIGH)"
+  }
+]
