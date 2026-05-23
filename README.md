@@ -1,26 +1,22 @@
 <div align="center">
 
-# &#x1F6E1;&#xFE0F; SESIS-FEDERATION
-
-### Plataforma Unificada de Gobierno Digital Militar — C4ISR
-
-*Fusión de **SESIS** · **AEGIS-IMINT** · **Atalaya** · **Global-Intelligence** · **SpyManager***
+<img src="docs/images/sesis-logo.svg" alt="SESIS-FEDERATION Logo" width="800">
 
 </div>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Status-Operational-success?style=for-the-badge&logo=shield" alt="Status">
-  <img src="https://img.shields.io/badge/Security-Zero%20Trust-red?style=for-the-badge&logo=lock" alt="Zero Trust">
-  <img src="https://img.shields.io/badge/LLM-fsociety-blue?style=for-the-badge&logo=openai" alt="fsociety">
-  <img src="https://img.shields.io/badge/Architecture-C4ISR-purple?style=for-the-badge&logo=apachekafka" alt="C4ISR">
-  <img src="https://img.shields.io/badge/M%C3%B3dulos-9%20integrados-3ddc84?style=for-the-badge" alt="Modules">
-  <img src="https://img.shields.io/badge/Licencia-MIT-yellow?style=for-the-badge" alt="License">
-  <img src="https://img.shields.io/badge/Repo-274%20archivos-0a0e17?style=for-the-badge" alt="Size">
+  <img src="https://img.shields.io/badge/Status-Operational-3ddc84?style=for-the-badge&logo=power" alt="Status">
+  <img src="https://img.shields.io/badge/Security-Zero_Trust-e94560?style=for-the-badge&logo=lock" alt="Zero Trust">
+  <img src="https://img.shields.io/badge/LLM-fsociety-3498db?style=for-the-badge&logo=openai" alt="fsociety">
+  <img src="https://img.shields.io/badge/Architecture-C4ISR-9b59b6?style=for-the-badge&logo=apachekafka" alt="C4ISR">
+  <img src="https://img.shields.io/badge/Modules-9_Integrated-3ddc84?style=for-the-badge" alt="Modules">
+  <img src="https://img.shields.io/badge/License-MIT-eab308?style=for-the-badge" alt="License">
+  <img src="https://img.shields.io/badge/Files-274-0a0e17?style=for-the-badge" alt="Files">
 </p>
 
 ---
 
-## &#x1F4DD; Tabla de Contenidos
+## 📝 Tabla de Contenidos
 
 - [Visión General](#-visión-general)
 - [Arquitectura](#-arquitectura)
@@ -37,7 +33,7 @@
 
 ---
 
-## &#x1F4A1; Visión General
+## 💡 Visión General
 
 **SESIS-FEDERATION** es la convergencia de 5 sistemas militares de inteligencia en una sola plataforma C4ISR (Command, Control, Communications, Computers, Intelligence, Surveillance and Reconnaissance) soberana.
 
@@ -59,51 +55,51 @@ SESIS-FEDERATION resuelve esto mediante:
 
 ---
 
-## &#x1F3D7;&#xFE0F; Arquitectura
+## 🏗️ Arquitectura
 
 ```
-&#x250C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510;
-&#x2502;                    SESIS-FEDERATION C4ISR                                &#x2502;
-&#x2502;         Plataforma Unificada de Gobierno Digital Militar                   &#x2502;
-&#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518;
+┌─────────────────────────────────────────────────────────┐
+│                    SESIS-FEDERATION C4ISR                                │
+│         Plataforma Unificada de Gobierno Digital Militar                   │
+└─────────────────────────────────────────────────────────┘
                           |
-         &#x250C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510;
-         &#x2502;SESIS&#x2502;&#x2502;AEGIS&#x2502;&#x2502;Atalaya&#x2502;&#x2502;Global&#x2502;
-         &#x2502;(C2) &#x2502;&#x2502;(SAT)&#x2502;&#x2502;(OSINT)&#x2502;&#x2502;(Intel)&#x2502;
-         &#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518;&#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518;&#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518;&#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518;
+         ┌──────┬──────┬──────┬──────┐
+         │SESIS││AEGIS││Atalaya││Global│
+         │(C2) ││(SAT)││(OSINT)││(Intel)│
+         └──────┘└──────┘└──────┘└──────┘
                           |         |         |         |
-                          &#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518
+                          └───────┴───────&#x2518
                                         |
-                    &#x250C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510;
-                    &#x2502;      Fusion Engine (Core)        &#x2502;
-                    &#x2502;  + Event Bus (NATS)              &#x2502;
-                    &#x2502;  + fsociety LLM Orchestrator     &#x2502;
-                    &#x2502;  + ABAC + Audit Chain            &#x2502;
-                    &#x2502;  + Correlation Engine (ML)       &#x2502;
-                    &#x2502;  + Pipeline Cross-Modulo          &#x2502;
-                    &#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518;
+                    ┌─────────────────────┐
+                    │      Fusion Engine (Core)        │
+                    │  + Event Bus (NATS)              │
+                    │  + fsociety LLM Orchestrator     │
+                    │  + ABAC + Audit Chain            │
+                    │  + Correlation Engine (ML)       │
+                    │  + Pipeline Cross-Modulo          │
+                    └─────────────────────┘
                           |         |         |
-         &#x250C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510;
-         &#x2502;SpyMgr &#x2502;&#x2502;Mobile  &#x2502;&#x2502;Tactical&#x2502;
-         &#x2502;(Agents)&#x2502;&#x2502;(Flutter)&#x2502;&#x2502;(Ops)   &#x2502;
-         &#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518;&#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518;&#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518;
+         ┌──────┬──────┬──────┐
+         │SpyMgr ││Mobile  ││Tactical│
+         │(Agents)││(Flutter)││(Ops)   │
+         └──────┘└──────┘└──────┘
 ```
 
 ### Flujo de Datos Cross-Módulo
 
 ```
 Satélite detecta blindados en X
-  &#x2192; OSINT cruza con eventos GDELT + RSS + NewsAPI
-    &#x2192; Intel analiza y genera evaluación de amenaza
-      &#x2192; C2 crea alerta táctica en el dashboard
-        &#x2192; Agents notifica a operadores en campo
-          &#x2192; ML correlaciona con datos históricos
-            &#x2192; Audit chain registra todo
+  → OSINT cruza con eventos GDELT + RSS + NewsAPI
+    → Intel analiza y genera evaluación de amenaza
+      → C2 crea alerta táctica en el dashboard
+        → Agents notifica a operadores en campo
+          → ML correlaciona con datos históricos
+            → Audit chain registra todo
 ```
 
 ---
 
-## &#x1F4E6; Módulos
+## 📦 Módulos
 
 ### 1. sesis-core (Núcleo Unificado)
 | Componente | Descripción |
@@ -198,7 +194,7 @@ Satélite detecta blindados en X
 
 ---
 
-## &#x1F4F1; Stack Tecnológico
+## 📱 Stack Tecnológico
 
 | Capa | Tecnología | Versión |
 |------|-----------|---------|
@@ -215,7 +211,7 @@ Satélite detecta blindados en X
 
 ---
 
-## &#x1F527; Instalación
+## 🔧 Instalación
 
 ### Requisitos Mínimos
 
@@ -292,7 +288,7 @@ ollama create fsociety -f Modelfile
 
 ---
 
-## &#x1F3C3; Uso
+## 🏃 Uso
 
 ### CLI / API
 
@@ -430,7 +426,7 @@ Características:
 
 ---
 
-## &#x1F4CB; API Reference
+## 📋 API Reference
 
 ### Endpoints Disponibles
 
@@ -455,7 +451,7 @@ Documentación interactiva: `http://localhost:8000/docs` (Swagger UI)
 
 ---
 
-## &#x1F3AF; Casos de Uso
+## 🎯 Casos de Uso
 
 ### CASO 1: Operación Ofensiva Multi-Dominio
 
@@ -523,7 +519,7 @@ Documentación interactiva: `http://localhost:8000/docs` (Swagger UI)
 
 ---
 
-## &#x1F4F1; Mobile
+## 📱 Mobile
 
 La app móvil Flutter (`mobile/sesis_cop/`) proporciona:
 
@@ -558,7 +554,7 @@ flutter build apk --release
 
 ---
 
-## &#x1F680; Despliegue
+## 🚀 Despliegue
 
 ### Docker Compose (Recomendado)
 
@@ -595,7 +591,7 @@ kubectl apply -f infra/k8s/
 
 ---
 
-## &#x1F6E1;&#xFE0F; Seguridad
+## 🛡️ Seguridad
 
 ### Principios
 
@@ -629,33 +625,33 @@ kubectl apply -f infra/k8s/
 
 ---
 
-## &#x1F4DC; Estructura del Repositorio
+## 📜 Estructura del Repositorio
 
 ```
 SESIS-FEDERATION/
-&#x251C;&#x2500;&#x2500; backend/                    # Backend FastAPI + Celery
-&#x2502;   &#x251C;&#x2500;&#x2500; app/
-&#x2502;   &#x2502;   &#x251C;&#x2500;&#x2500; core/            # Nucleo unificado (config, security, audit, pipeline, llm)
-&#x2502;   &#x2502;   &#x251C;&#x2500;&#x2500; api/              # Routers REST (v1, v2, satellite, osint, intel, agents, tactical)
-&#x2502;   &#x2502;   &#x251C;&#x2500;&#x2500; services/         # Logica de negocio (por modulo)
-&#x2502;   &#x2502;   &#x251C;&#x2500;&#x2500; agents/           # Agentes de inteligencia
-&#x2502;   &#x2502;   &#x251C;&#x2500;&#x2500; db/               # Modelos + sesion + migraciones
-&#x2502;   &#x2502;   &#x2514;&#x2500;&#x2500; schemas/          # Pydantic schemas
-&#x2502;   &#x2514;&#x2500;&#x2500; migrations/                  # SQL migrations
-&#x251C;&#x2500;&#x2500; frontend/                   # Next.js 14 COP Dashboard
-&#x251C;&#x2500;&#x2500; mobile/                     # Flutter COP App + Wear OS
-&#x251C;&#x2500;&#x2500; ml/                          # Machine Learning (anomalias, correlacion, vision)
-&#x251C;&#x2500;&#x2500; scripts/                     # Utilidades (seed, keys, ollama)
-&#x251C;&#x2500;&#x2500; infra/                       # Nginx, Prometheus, Grafana, K8s
-&#x251C;&#x2500;&#x2500; compliance/                  # Matrices de cumplimiento (STANAG, ENS, NIST)
-&#x251C;&#x2500;&#x2500; docs/                        # Documentacion arquitectura y API
-&#x251C;&#x2500;&#x2500; docker-compose.yml
-&#x2514;&#x2500;&#x2500; .env.example
+├── backend/                    # Backend FastAPI + Celery
+│   ├── app/
+│   │   ├── core/            # Nucleo unificado (config, security, audit, pipeline, llm)
+│   │   ├── api/              # Routers REST (v1, v2, satellite, osint, intel, agents, tactical)
+│   │   ├── services/         # Logica de negocio (por modulo)
+│   │   ├── agents/           # Agentes de inteligencia
+│   │   ├── db/               # Modelos + sesion + migraciones
+│   │   └── schemas/          # Pydantic schemas
+│   └── migrations/                  # SQL migrations
+├── frontend/                   # Next.js 14 COP Dashboard
+├── mobile/                     # Flutter COP App + Wear OS
+├── ml/                          # Machine Learning (anomalias, correlacion, vision)
+├── scripts/                     # Utilidades (seed, keys, ollama)
+├── infra/                       # Nginx, Prometheus, Grafana, K8s
+├── compliance/                  # Matrices de cumplimiento (STANAG, ENS, NIST)
+├── docs/                        # Documentacion arquitectura y API
+├── docker-compose.yml
+└── .env.example
 ```
 
 ---
 
-## &#x1F4C4; Licencia
+## 📄 Licencia
 
 MIT License — ver [LICENSE](LICENSE).
 
@@ -664,5 +660,5 @@ MIT License — ver [LICENSE](LICENSE).
 <div align="center">
   <sub>SESIS-FEDERATION v1.0 — 274 archivos · 9 módulos · 5 repos fusionados</sub>
   <br>
-  <sub>Construido con &#x2764;&#xFE0F; sobre fsociety, FastAPI, Next.js y Flutter</sub>
+  <sub>Construido con ❤️ sobre fsociety, FastAPI, Next.js y Flutter</sub>
 </div>
