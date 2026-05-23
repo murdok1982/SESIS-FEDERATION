@@ -132,6 +132,18 @@ app.include_router(steganography_api.router, prefix="/api/v1/agents/stego", tags
 app.include_router(threat_api.router, prefix="/api/v1/agents/threat", tags=["Agents", "Threat"])
 app.include_router(wearable_api.router, prefix="/api/v1/agents/wearable", tags=["Agents", "Wearable"])
 
+# sesis-tactical (OPORD, Wargaming, Joint Fires, BDA, PSYOPS)
+from app.api.tactical import opord, wargaming, joint_fires, bda, psyops
+app.include_router(opord.router, prefix="/api/v1/tactical/opord", tags=["Tactical", "OPORD"])
+app.include_router(wargaming.router, prefix="/api/v1/tactical/wargaming", tags=["Tactical", "Wargaming"])
+app.include_router(joint_fires.router, prefix="/api/v1/tactical/fires", tags=["Tactical", "Joint Fires"])
+app.include_router(bda.router, prefix="/api/v1/tactical/bda", tags=["Tactical", "BDA"])
+app.include_router(psyops.router, prefix="/api/v1/tactical/psyops", tags=["Tactical", "PSYOPS"])
+
+# sesis-sensors (IoT Mesh)
+from app.api.agents import sensor_mesh_api
+app.include_router(sensor_mesh_api.router, prefix="/api/v1/agents/sensors", tags=["Agents", "Sensors"])
+
 # sesis-auth (unified)
 from app.api.auth import router as auth_router
 app.include_router(auth_router, prefix="/api/v1/auth", tags=["Auth"])
